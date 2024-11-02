@@ -5,8 +5,6 @@ func maxUniqueSplit(s string) int {
 	//найденные в процессе поиска.
 	m := make(map[string]struct{})
 
-	//Здесь создается карта m, в которой будут храниться
-	//уникальные подстроки, найденные в процессе поиска.
 	var backtrack func(start int) int
 	backtrack = func(start int) int {
 		if start == len(s) {
