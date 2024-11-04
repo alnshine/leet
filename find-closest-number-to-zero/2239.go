@@ -1,6 +1,8 @@
 package find_closest_number_to_zero
 
-import "math"
+import (
+	"math"
+)
 
 func findClosestNumber(nums []int) int {
 	var res int
@@ -18,4 +20,8 @@ func findClosestNumber(nums []int) int {
 		}
 	}
 	return res
+}
+
+func Solve(arr []int) int {
+	return findClosestNumber(arr)
 }
